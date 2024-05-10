@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Padel&Friends! - login</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/formulario.css}">
+</head>
+
+<body class="background">
+<header>
+    <div class="logo">
+        <a th:href="@{/home}">
+            <img th:src="@{/img/logo.png}" alt="Logo">
+            <h1>adel & Friends</h1>
+        </a>
+    </div>
+    <div class="login-btn">
+        <a th:href="@{/}">
+            <button >Exit</button>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="content-container">
+        <div class="centered-content">
+            <h1 class="intense">¡Entra!</h1>
+            <form th:action="@{/login}" method="post">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="clave">Clave:</label>
+                <input type="password" id="clave" name="clave" required>
+
+                <label th:text="${error}"></label>
+
+                <button class="join-btn" type="submit">Aceptar</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+

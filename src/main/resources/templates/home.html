@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Padel&Friends!</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/formulario.css}">
+</head>
+
+<body class="background">
+<script th:src="@{/js/isLogged.js}"></script>
+<header>
+    <div class="logo">
+        <a th:href="@{/home}">
+            <img th:src="@{/img/logo.png}" alt="Logo">
+            <h1>adel & Friends</h1>
+        </a>
+    </div>
+    <div class="login-btn">
+        <a th:href="@{/login}">
+            <button>Cerrar sesión</button>
+        </a>
+    </div>
+</header>
+<main>
+
+    <div class="content-container">
+        <div class="container">
+            <div class="box">
+                <h2 class="intense">¡Reserva pista!</h2>
+                <img th:src="@{/img/reserva.jpg}" alt="reserva">
+                <p>¿Tienes ardoroso espíritu competitivo y una camaradería inquebrantable? ¡Este es el lugar donde los
+                    sueños se convierten en realidad! ¡Reserva una pista entera para ti y tus compañeros y desata la
+                    furia de tus raquetas con la poderosa fuerza de la amistad en el pádel!</p>
+
+                <a th:href="@{/pista}">
+                    <button>Reserva</button>
+                </a>
+
+            </div>
+            <div class="box">
+                <h2 class="intense">¡Encuentra amigos!</h2>
+                <img th:src="@{/img/unete.jpg}" alt="unete">
+                <p>¿Estas solo? ¿Tus amigos no te aguantan? ¿Tu novia te ha dejado? ¡Aquí puedes canalizar
+                    esa energía negativa! Enfréntate a otros, desahógate, y muestra tu superioridad en la pista de
+                    pádel haciendo que tus oponentes se ahoguen en el polvo de tu victoria!</p>
+                <a th:href="@{/plaza}">
+                    <button>Unete</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+

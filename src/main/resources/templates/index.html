@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Padel&Friends!</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+
+<body class="background">
+<header>
+    <div class="logo">
+        <a th:href="@{/home}">
+            <img th:src="@{/img/logo.png}" alt="Logo">
+            <h1>adel & Friends</h1>
+        </a>
+    </div>
+    <div class="login-btn">
+        <a th:href="@{/login}">
+            <button>Login</button>
+        </a>
+    </div>
+</header>
+<main>
+    <div class="content-container">
+        <div class="centered-content">
+            <h1 class="intense">VIVE LA EXPERIENCIA PADEL & FRIENDS</h1>
+
+            <h4>Disfruta de un ambiente íntimo y cautivador para un juego único.</h4>
+        </div>
+        <a th:href="@{/register}">
+            <button class="join-btn">¡ÚNETE!</button>
+        </a>
+    </div>
+</main>
+
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 34px;
+    margin: 0;
+    font-style: italic;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-btn button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    flex: 1; /* Las cajas ocuparán todo el espacio disponible */
+    max-width: calc(50% - 10px); /* El 10px es la mitad del espacio de separación */
+    margin-right: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Para incluir el borde en el ancho total */
+    text-align: center; /* Centrar el contenido horizontalmente */
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco transparente */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.box p {
+    margin: 0 auto 10px auto; /* Centro el texto horizontalmente y agrego espacio debajo */
+}
+
+.box button {
+    margin: 10px auto 0 auto; /* Centro el botón horizontalmente y agrego espacio encima */
+}
+
+
+
+
+.box img {
+    max-width: 100%; /* Para asegurar que la imagen se ajuste al ancho de la caja */
+    height: auto; /* Para mantener la proporción de aspecto de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+.box:last-child {
+    margin-right: 0; /* Eliminar margen derecho de la última caja */
+}
+
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.background {
+    background-image: url('/img/background.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Tamaño de la pantalla */
+    position: relative; /* Asegurar que el contenido absoluto se posicione dentro del contenedor principal */
+}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.logo h1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 34px;
+    margin: 0;
+    font-style: italic;
+}
+
+.intense {
+    font-style: italic;
+    background-image: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-btn button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido horizontalmente */
+    max-width: 33%; /* Ancho máximo del contenedor */
+}
+
+.join-btn {
+    background-color: #4c58d5;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+}
+
+.join-btn:hover {
+    background-color: #000173;
+}
+
+p {
+    margin-top: 20px;
+    max-width: 100%; /* Ajustar el ancho máximo del texto al contenedor */
+}
+
+.background {
+    background-image: url('/img/background.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Tamaño de la pantalla */
+    position: relative; /* Asegurar que el contenido absoluto se posicione dentro del contenedor principal */
+}
+
+.card {
+    margin: 20px;
+    padding-top: calc(var(--bs-gutter-x) * .5);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: #ff0000;
+    border-color: #ff0000;
+}

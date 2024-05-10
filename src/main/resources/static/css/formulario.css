@@ -1,0 +1,44 @@
+.intense {
+    font-style: italic;
+    background-image: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Restar el doble del padding al ancho */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+}
+
+button.join-btn {
+    background-color: #4c58d5;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.join-btn:hover {
+    background-color: #000173;
+}
+
